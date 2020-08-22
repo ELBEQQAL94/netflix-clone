@@ -4,8 +4,9 @@
 * [x] Install react app
 * [x] Create repo
 * [x] Get TMDB Api Key
-* [ ] Get all movies
+* [x] Get all movies
 * [ ] Install SCSS
+* [ ] Install eslint
 * [x] Install axios
 * [x] Favicon
 * [x] Create Services
