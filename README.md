@@ -7,7 +7,7 @@
 * [ ] Get all movies
 * [ ] Install SCSS
 * [x] Install axios
-* [ ] Favicon
+* [x] Favicon
 
 ## API's
 * https://api.themoviedb.org
