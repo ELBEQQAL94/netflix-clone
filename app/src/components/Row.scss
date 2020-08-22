@@ -1,0 +1,26 @@
+/* Row Section */
+.row {
+  .row__title {
+    text-transform: capitalize;
+  }
+  .row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+    .row__poster {
+      object-fit: contain;
+      width: 100%;
+      max-height: 100px;
+      margin-right: 10px;
+      transition: transform 450ms linear;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.4);
+      }
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

@@ -12,6 +12,7 @@
 * [x] Favicon
 * [x] Create Services
 * [x] Create components folder
+* [ ] Add prop types
 
 ## API's
 * https://api.themoviedb.org
