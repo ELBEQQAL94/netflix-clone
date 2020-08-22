@@ -8,6 +8,7 @@
 * [ ] Install SCSS
 * [x] Install axios
 * [x] Favicon
+* [x] Create Services
 
 ## API's
 * https://api.themoviedb.org
