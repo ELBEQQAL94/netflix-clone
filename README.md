@@ -18,6 +18,9 @@
 * [ ] NavBar
 * [ ] Check responsive layouts
 * [ ] Make colors as vars
+* [ ] Add netflix spinner loading
+* [ ] Add leazy loading for each image
+* [ ] Use try and catch with async functions
 * [ ] Build application for production
 * [ ] Deploy application on netlify
 
