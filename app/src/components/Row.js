@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 
 import "./Row.scss";
 
-const Row = ({ title, fetchData }) => {
+const Row = ({ title, fetchData, isLargeRow }) => {
 
   const [movies, setMovies] = useState([]);
 
@@ -27,20 +27,19 @@ const Row = ({ title, fetchData }) => {
 
   }, []);
 
-  console.log("Movies: ", movies);
 
   return (
     <div className="row">
-      <h2 className="row__title">{title}</h2>
+      <h2 className="row__title">{isLargeRow ? title.toUpperCase() : title}</h2>
       <div className="row__posters">
         {
-          movies?.map(({poster_path, name, id}) => (
+          movies?.map(({poster_path, name, id, backdrop_path}) => (
             <img
               key={id}
-              src={`${baseImgUrl}${poster_path}`}
+              src={`${baseImgUrl}${isLargeRow ? poster_path : backdrop_path}`}
               alt={name}
               title={name}
-              className="row__poster"
+              className={`row__poster ${isLargeRow && "row__poster--large"}`}
             />
           ))
         }
@@ -51,6 +50,7 @@ const Row = ({ title, fetchData }) => {
 
 Row.propTypes = {
   title: PropTypes.string.isRequired,
+  isLargeRow: PropTypes.bool,
   fetchData: PropTypes.string.isRequired,
 };
 

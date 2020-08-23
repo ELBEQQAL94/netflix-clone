@@ -1,5 +1,7 @@
 /* Row Section */
 .row {
+  margin-left: 20px;
+  color: #fff;
   .row__title {
     text-transform: capitalize;
   }
@@ -17,6 +19,14 @@
       cursor: pointer;
       &:hover {
         transform: scale(1.4);
+      }
+    }
+    .row__poster--large {
+      max-height: 250px;
+      transition: transform 450ms linear;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.08);
       }
     }
     &::-webkit-scrollbar {

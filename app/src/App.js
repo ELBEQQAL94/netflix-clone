@@ -5,17 +5,27 @@ import requests from "./services/requests";
 
 // Components
 import Row from "./components/Row";
+import NavBar from "./components/NavBar";
+import Banner from "./components/Banner";
+
 
 // Styles
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
-    <>
-      <h1>Netflix Clone</h1>
+    <div className="App">
+      <NavBar />
+      <Banner fetchData={requests.fetchTrending}/>
+      <Row title="netflix originals" fetchData={requests.fetchNetflixOriginals} isLargeRow/>
       <Row title="trending now" fetchData={requests.fetchTrending}/>
-      <Row title="netflix originals" fetchData={requests.fetchNetflixOriginals}/>
-    </>
+      <Row title="top rated" fetchData={requests.fetchTopRated}/>
+      <Row title="action movies" fetchData={requests.fetchActionMovies}/>
+      <Row title="comedy movies" fetchData={requests.fetchComedyMovies}/>
+      <Row title="horror movies" fetchData={requests.fetchHorrorMovies}/>
+      <Row title="romance movies" fetchData={requests.fetchRomanceMovies}/>
+      <Row title="documentaries" fetchData={requests.fetchDocumentaries}/>
+    </div>
   );
 }
 
