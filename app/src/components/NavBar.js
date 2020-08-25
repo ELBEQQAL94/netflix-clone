@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import NetflixLogo  from "../images/netflixlogo.png";
 import Avatar  from "../images/avatar.png";
 
@@ -6,8 +6,23 @@ import Avatar  from "../images/avatar.png";
 import "./NavBar.scss";
 
 const NavBar = () => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 100) {
+        setShow(true);
+      } else {
+        setShow(false);
+      }
+    });
+
+    return () => {
+      window.removeEventListener('scroll');
+    }
+  }, []);
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${show && 'bg__navbar'}`}>
       <div className="netflix__container">
         <img
           className="netflix__img"

@@ -1,0 +1,5 @@
+[2020-08-25 17:07:21.857] [main] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/youssef/Downloads/netflix-clone/app/~/.vscode-root/User'
+[2020-08-25 17:07:25.651] [main] [info] update#setState idle
+[2020-08-25 17:07:55.671] [main] [info] update#setState checking for updates
+[2020-08-25 17:08:07.641] [main] [info] update#setState available for download
+[2020-08-25 17:08:37.353] [main] [error] [VS Code]: detected unresponsive
