@@ -14,17 +14,24 @@ import "./Banner.scss";
 const Banner = ({fetchData}) => {
 
   const [movie, setMovie] = useState({});
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   // fetch data from server
   useEffect(() => {
 
     async function fetch() {
-      const res =  await instance.get(fetchData);
-      setMovie(res.data.results[
-        Math.floor(
-          Math.random() * res.data.results.length - 1
-        )
-      ]);
+      try {
+        const res =  await instance.get(fetchData);
+        setMovie(res.data.results[
+          Math.floor(
+            Math.random() * res.data.results.length - 1
+          )
+        ]);
+        setLoading(false);
+      } catch(error) {
+        setError(true);
+      }
     }
 
     fetch();
