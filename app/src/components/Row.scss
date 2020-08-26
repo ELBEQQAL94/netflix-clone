@@ -1,7 +1,9 @@
+@import"../App.scss";
+
 /* Row Section */
 .row {
   margin-left: 20px;
-  color: #fff;
+  color: $white;
   margin-top: 1em;
   .row__title {
     text-transform: capitalize;

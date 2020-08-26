@@ -1,5 +1,7 @@
+@import"../App.scss";
+
 .banner {
-  color: white;
+  color: $white;
   object-fit: contain;
   height: 600px;
   .banner__container {
@@ -14,7 +16,7 @@
     .banner__buttons {
       .banner__button {
         cursor: pointer;
-        color: #fff;
+        color: $white;
         outline: none;
         border: none;
         font-weight: 700;
@@ -44,7 +46,7 @@
       180deg,
       transparent,
       rgba(37, 37, 37, 0.61),
-      #111
+      $main-color
     );
   }
 }

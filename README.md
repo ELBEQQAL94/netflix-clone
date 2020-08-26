@@ -17,7 +17,7 @@
 * [x] Banner
 * [x] NavBar
 * [ ] Check responsive layouts
-* [ ] Make colors as vars
+* [x] Make colors as vars
 * [x] Add leazy loading for each image
 * [x] Use try and catch with async functions
 * [ ] Build application for production

@@ -1,3 +1,6 @@
+$main-color: #111;
+$white: #fff;
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,5 +8,5 @@
 }
 
 .App {
-  background-color: #111;
+  background-color: $main-color;
 }
