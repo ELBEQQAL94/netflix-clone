@@ -35,6 +35,6 @@
 * [x] Footer
 * [ ] Banner
 * [ ] Raw
-* [ ] RawItem
+* [x] RawItem
 * [ ] NavBar
 * [ ] App
