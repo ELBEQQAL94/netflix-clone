@@ -7,6 +7,7 @@ import requests from "./services/requests";
 import Row from "./components/Row";
 import NavBar from "./components/NavBar";
 import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 
 
 // Styles
@@ -25,6 +26,7 @@ function App() {
       <Row title="horror movies" fetchData={requests.fetchHorrorMovies}/>
       <Row title="romance movies" fetchData={requests.fetchRomanceMovies}/>
       <Row title="documentaries" fetchData={requests.fetchDocumentaries}/>
+      <Footer />
     </div>
   );
 }
