@@ -32,5 +32,9 @@
 * Netlify
 
 ## Test
-* react-test-library
-* jest
+* [x] Footer
+* [ ] Banner
+* [ ] Raw
+* [ ] RawItem
+* [ ] NavBar
+* [ ] App
