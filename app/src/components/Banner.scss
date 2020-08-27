@@ -1,5 +1,7 @@
 @import"../App.scss";
 
+$xs: 575px;
+
 .banner {
   color: $white;
   object-fit: contain;
@@ -48,5 +50,19 @@
       rgba(37, 37, 37, 0.61),
       $main-color
     );
+  }
+}
+
+@media (max-width: $xs) {
+  .banner__container {
+    padding: 102px 60px 0 0 !important;
+    margin-left: 0 !important;
+    height: 500px;
+    .banner__title {
+      font-size: 1.2em !important;
+    }
+    .banner__description {
+      font-size: 1.2em;
+    }
   }
 }
