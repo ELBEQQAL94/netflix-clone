@@ -29,7 +29,8 @@
 * https://api.themoviedb.org
 
 ## Deployement
-* Netlify
+* Vercel
+* live demo: [ ](https://netflix-clone-psi.vercel.app/)
 
 ## Test
 * [x] Footer
